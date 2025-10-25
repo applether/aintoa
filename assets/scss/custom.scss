@@ -1,0 +1,30 @@
+body, .article-content {
+    // font-family: 'Long Cang', cursive;
+    // font-family: 'Ma Shan Zheng', cursive;
+    // font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Noto Serif SC', serif;
+    // font-family: 'Zhi Mang Xing', cursive;
+}
+
+html{
+    ::-webkit-scrollbar {
+        width: 20px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 20px;
+        border: 0px solid transparent;
+        background-clip: content-box;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: transparent;
+      
+      }
+}
+

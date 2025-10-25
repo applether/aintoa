@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tags on APPLE FEVER</title>
+        <link>http://localhost:1313/aintoa/tags/</link>
+        <description>Recent content in Tags on APPLE FEVER</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>名真叹苹果</copyright>
+        <lastBuildDate>Fri, 12 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/aintoa/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>旅游</title>
+        <link>http://localhost:1313/aintoa/tags/%E6%97%85%E6%B8%B8/</link>
+        <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/aintoa/tags/%E6%97%85%E6%B8%B8/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>摄影</title>
+        <link>http://localhost:1313/aintoa/tags/%E6%91%84%E5%BD%B1/</link>
+        <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/aintoa/tags/%E6%91%84%E5%BD%B1/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Css</title>
+        <link>http://localhost:1313/aintoa/tags/css/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/aintoa/tags/css/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Html</title>
+        <link>http://localhost:1313/aintoa/tags/html/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/aintoa/tags/html/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Markdown</title>
+        <link>http://localhost:1313/aintoa/tags/markdown/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/aintoa/tags/markdown/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Themes</title>
+        <link>http://localhost:1313/aintoa/tags/themes/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/aintoa/tags/themes/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Privacy</title>
+        <link>http://localhost:1313/aintoa/tags/privacy/</link>
+        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/aintoa/tags/privacy/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Shortcodes</title>
+        <link>http://localhost:1313/aintoa/tags/shortcodes/</link>
+        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/aintoa/tags/shortcodes/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Tag With Whitespaces</title>
+        <link>http://localhost:1313/aintoa/tags/tag-with-whitespaces/</link>
+        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/aintoa/tags/tag-with-whitespaces/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Text</title>
+        <link>http://localhost:1313/aintoa/tags/text/</link>
+        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/aintoa/tags/text/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Emoji</title>
+        <link>http://localhost:1313/aintoa/tags/emoji/</link>
+        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/aintoa/tags/emoji/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
