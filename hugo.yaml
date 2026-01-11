@@ -1,57 +1,28 @@
-baseurl: https://example.com/
+baseurl: https://aintoa.netlify.app
 languageCode: en-us
 theme: hugo-theme-stack
-title: Example Site
-copyright: Example Person
+title: APPLE FEVER
+copyright: 名真叹苹果
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
-DefaultContentLanguage: en
+DefaultContentLanguage: zh-cn
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage: false
+hasCJKLanguage: true
 
 languages:
-    en:
-        languageName: English
-        title: Example Site
-        weight: 1
-        params:
-            sidebar:
-                subtitle: Example description
+    
     zh-cn:
-        languageName: 简体中文
-        title: 演示站点
+        languageName: 中文
+        title: APPLE FEVER
         weight: 2
         params:
             sidebar:
-                subtitle: 演示说明
-
-    zh-tw:
-        languageName: 正體中文
-        title: 演示站點
-        weight: 2
-        params:
-            sidebar:
-                subtitle: 演示說明
-
-    ja:
-        languageName: 日本語
-        title: サンプルサイト
-        weight: 2
-        params:
-            sidebar:
-                subtitle: サンプル説明
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
-        params:
-            sidebar:
-                subtitle: وصف تجريبي
-
+                subtitle: 来吃一口坏苹果。
+  
+    
 services:
     # Change it to your Disqus shortname before using
     disqus:
@@ -72,10 +43,10 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: /img/logo.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
-        since: 2020
+        since: 2024
         customText:
 
     dateFormat:
@@ -83,12 +54,12 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🍥
+        emoji: 🍏
         subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: img/sin-line.png
 
     article:
         math: false
@@ -100,7 +71,8 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: waline
+        
 
         disqusjs:
             shortname:
@@ -135,24 +107,23 @@ params:
 
         # Waline client configuration see: https://waline.js.org/en/reference/component.html
         waline:
-            serverURL:
-            lang:
-            pageview:
+            serverURL: https://waline-h5wxls0v9-applethers-projects.vercel.app
+            lang: zh-cn
+            pageview: false
             emoji:
                 - https://unpkg.com/@waline/emojis@1.0.1/weibo
             requiredMeta:
                 - name
-                - email
-                - url
+                
             locale:
                 admin: Admin
                 placeholder:
 
         twikoo:
-            envId:
+            envId: https://twikoo-jvyhqt2xd-applethers-projects.vercel.app
             region:
             path:
-            lang:
+            lang: zh-cn
 
         # See https://cactus.chat/docs/reference/web-client/#configuration for description of the various options
         cactus:
@@ -190,10 +161,10 @@ params:
                   limit: 5
             - type: categories
               params:
-                  limit: 10
+                  limit: 5
             - type: tag-cloud
               params:
-                  limit: 10
+                  limit: 5
         page:
             - type: toc
 
@@ -231,15 +202,11 @@ menu:
     main: []
 
     social:
-        - identifier: github
-          name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
-          params:
-              icon: brand-github
+        
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
+        - identifier: Mastodon
+          name: Mastodon
+          url: https://m.otter.homes/@applether
           params:
               icon: brand-twitter
 
@@ -283,3 +250,8 @@ markup:
         lineNos: true
         lineNumbersInTable: true
         tabWidth: 4
+
+# config.yaml
+module:
+  imports:
+    - path: github.com/CaiJimmy/hugo-theme-stack/v3
