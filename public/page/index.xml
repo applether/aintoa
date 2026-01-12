@@ -1,90 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Pages on APPLE FEVER</title>
-        <link>http://localhost:1313/aintoa/page/</link>
-        <description>Recent content in Pages on APPLE FEVER</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>名真叹苹果</copyright>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/aintoa/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>归档</title>
-        <link>http://localhost:1313/aintoa/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/aintoa/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Links</title>
-        <link>http://localhost:1313/aintoa/links/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/aintoa/links/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Search</title>
-        <link>http://localhost:1313/aintoa/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/aintoa/search/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>关于</title>
-        <link>http://localhost:1313/aintoa/%E5%85%B3%E4%BA%8E/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/aintoa/%E5%85%B3%E4%BA%8E/</guid>
-        <description>  &lt;style&gt; html, body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on APPLE FEVER</title><link>https://applether.github.io/aintoa/page/</link><description>Recent content in Pages on APPLE FEVER</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>名真叹苹果</copyright><lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://applether.github.io/aintoa/page/index.xml" rel="self" type="application/rss+xml"/><item><title>归档</title><link>https://applether.github.io/aintoa/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://applether.github.io/aintoa/archives/</guid><description/></item><item><title>Links</title><link>https://applether.github.io/aintoa/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://applether.github.io/aintoa/links/</guid><description/></item><item><title>Search</title><link>https://applether.github.io/aintoa/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://applether.github.io/aintoa/search/</guid><description/></item><item><title>关于</title><link>https://applether.github.io/aintoa/%E5%85%B3%E4%BA%8E/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://applether.github.io/aintoa/%E5%85%B3%E4%BA%8E/</guid><description> &lt;style> html, body {
+margin: 0;
+width: 100%;
+height: 100%;
 }
-&lt;/style&gt;
-  &lt;div id=&#34;tags-wall&#34;&gt;&lt;/div&gt;
-      &lt;script src=&#34;http://localhost:1313/aintoa/js/tags-wall.js&#34; async=&#34;&#34;&gt;&lt;/script&gt;
-      &lt;script&gt;
-        const query = window.location.search.substring(1)
-      .split(&#39;&amp;&#39;).map(e =&gt; e.split(&#39;=&#39;))
-      .reduce((pre, cur) =&gt; {
-          pre[cur[0]] = decodeURI(cur[1])
-          return pre
-      }, {})
-    if (query.url) {
-      document.title = query.title || document.title
-      fetch(query.url)
-        .then(res =&gt; res.text())
-        .then(text =&gt; Tags({
-          style: {
-            fn: Style1,
-            title: query.title,
-            animation: query.animation === &#39;1&#39;,
-            scale: 1,
-          },
-          text,
-          rootDOM: document.getElementById(&#39;tags-wall&#39;)
-        }))
-    }
-        Tags({
-        style: {
-          fn: Style1,
-          title: &#39;about&#39;,
-          animation: 1, // 如果是1，则开启动画，否则不开启动画
-          scale: 1, // 放缩比例，即可调节标签和背景字的整体大小
-          randomScoreIfNoSetting: 1 // 如果是1，则如果未设置标签大小那么随机设置一个大小；否则使用默认大小5
-        },
-        text: `
-        infp/3
-        标签2
-        ...
-        `, // 可以写在单独的文件中，如果写在的文件中，需要像上方那样使用fetch请求文件
-        rootDOM: document.getElementById(&#39;tags-wall&#39;)
-      })
-    &lt;/script&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;/style>
+&lt;div id="tags-wall">&lt;/div>
+&lt;script src="https://applether.github.io/aintoa/js/tags-wall.js" async="">&lt;/script>
+&lt;script>
+const query = window.location.search.substring(1)
+.split('&amp;').map(e => e.split('='))
+.reduce((pre, cur) => {
+pre[cur[0]] = decodeURI(cur[1])
+return pre
+}, {})
+if (query.url) {
+document.title = query.title || document.title
+fetch(query.url)
+.then(res => res.text())
+.then(text => Tags({
+style: {
+fn: Style1,
+title: query.title,
+animation: query.animation === '1',
+scale: 1,
+},
+text,
+rootDOM: document.getElementById('tags-wall')
+}))
+}
+Tags({
+style: {
+fn: Style1,
+title: 'about',
+animation: 1, // 如果是1，则开启动画，否则不开启动画
+scale: 1, // 放缩比例，即可调节标签和背景字的整体大小
+randomScoreIfNoSetting: 1 // 如果是1，则如果未设置标签大小那么随机设置一个大小；否则使用默认大小5
+},
+text: `
+infp/3
+标签2
+...
+`, // 可以写在单独的文件中，如果写在的文件中，需要像上方那样使用fetch请求文件
+rootDOM: document.getElementById('tags-wall')
+})
+&lt;/script></description></item></channel></rss>
