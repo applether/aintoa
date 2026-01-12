@@ -17,9 +17,7 @@ services:
   googleAnalytics:
     id: "" # 留空或删除此行，强制不调用旧模板
 
-build.environment:
-  HUGO_VERSION:0.140.0
-  HUGO_VERSION_EXTENDED:true
+
 
 markup:
   goldmark:
