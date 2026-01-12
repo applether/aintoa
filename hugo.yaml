@@ -51,6 +51,8 @@ permalinks:
     page: /:slug/
 
 params:
+    customCSS:
+    - scss/custom.scss
     mainSections:
         - post
     featuredImageField: image
