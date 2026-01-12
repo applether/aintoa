@@ -12,6 +12,11 @@ DefaultContentLanguage: zh-cn
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: true
 
+# 如果是 YAML 格式：
+services:
+  googleAnalytics:
+    id: "" # 留空或删除此行，强制不调用旧模板
+
 markup:
   goldmark:
     renderer:

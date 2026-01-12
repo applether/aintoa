@@ -1,11 +1,9 @@
 [build]
-  # 注意：这里直接运行 hugo，不再需要 cd exampleSite
   command = "hugo --gc --minify"
-  # 告诉 Netlify 编译后的网页在 public 文件夹
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.124.0"
+  HUGO_VERSION = "0.140.0" # 升级到较新版本
   HUGO_VERSION_EXTENDED = "true"
   HUGO_ENV = "production"
 
