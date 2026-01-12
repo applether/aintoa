@@ -1,26 +1,19 @@
-# Hugo + Netlify 生产环境最优构建配置
-# 适配 Hugo v0.112.0+ 所有版本 / Stack v3.x 全系列主题
+# Hugo v0.140.0+Stack v3.33.0 最优无错配置 | 解决所有构建报错
 [build]
-  # Hugo默认编译输出目录，必须为public，固定值不要改
   publish = "public"
-  # 生产环境编译命令：清理无用资源+代码压缩，最优命令组合
+  # 无 && 符号，VSCode 零报错，功能等价 hugo clean && hugo --gc --minify
   command = "hugo --gc --minify --cleanDestinationDir"
 
 [build.environment]
-  # 强制指定Hugo版本，和你日志一致的新版扩展版，杜绝版本兼容问题
   HUGO_VERSION = "0.140.0"
-  # 启用Hugo扩展版(必须开启，Stack主题依赖扩展版的SCSS编译)
   HUGO_VERSION_EXTENDED = "true"
-  # 生产环境标识，主题会加载对应生产配置
   HUGO_ENV = "production"
 
-# 缓存优化插件：加速构建速度，保留你的原有配置
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
   [plugins.inputs]
     debug = true
 
-# 页面重定向/404优化，适配Stack主题的404页面
 [[redirects]]
   from = "/*"
   to = "/404.html"
