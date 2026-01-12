@@ -1,8 +1,1 @@
-{{- /* 修复 Hugo v0.100+ 版本 _internal/google_analytics.html 不存在的问题 */ -}}
-{{- /* 适配 Stack v3.x 主题 + Hugo 新版，国内用户无需谷歌统计，直接返回空即可 */ -}}
-{{- if not site.Config.Services.GoogleAnalytics.ID }}
-{{- return -}}
-{{- end -}}
-
-{{- /* 新版 Hugo GA4 官方内置模板 正确调用方式 (适配 Hugo v0.100.0+) */ -}}
-{{ template "_internal/google_analytics_ga4.html" . }}
+<!-- 彻底解决Hugo新版谷歌统计模板缺失问题，国内用户无需统计功能 -->
