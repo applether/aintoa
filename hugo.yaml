@@ -1,4 +1,4 @@
-baseurl: "https://applether.github.io/aintoa/"
+baseurl: https://aintoa.netlify.app
 languageCode: en-us
 theme: hugo-theme-stack
 title: APPLE FEVER
