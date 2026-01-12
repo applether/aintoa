@@ -51,14 +51,13 @@ permalinks:
     page: /:slug/
 
 params:
-    customCSS:
-    - scss/custom.scss
     mainSections:
         - post
     featuredImageField: image
     rssFullContent: true
     favicon: /img/logo.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
-
+    custom CSS:
+        - scss/custom.scss
     footer:
         since: 2024
         customText:
