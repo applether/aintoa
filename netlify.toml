@@ -5,7 +5,7 @@
   command = "hugo --gc --minify --cleanDestinationDir"
 
 [build.environment]
-  HUGO_VERSION = "0.140.0"
+  HUGO_VERSION = "0.147.8"
   HUGO_VERSION_EXTENDED = "true"
   HUGO_ENV = "production"
 
