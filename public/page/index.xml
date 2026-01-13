@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on APPLE FEVER</title>
-        <link>http://localhost:1313/aintoa/page/</link>
+        <link>http://localhost:1313/page/</link>
         <description>Recent content in Pages on APPLE FEVER</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>名真叹苹果</copyright>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/aintoa/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>归档</title>
-        <link>http://localhost:1313/aintoa/archives/</link>
+        <link>http://localhost:1313/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/aintoa/archives/</guid>
+        <guid>http://localhost:1313/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Links</title>
-        <link>http://localhost:1313/aintoa/links/</link>
+        <link>http://localhost:1313/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/aintoa/links/</guid>
+        <guid>http://localhost:1313/links/</guid>
         <description></description>
         </item>
         <item>
         <title>Search</title>
-        <link>http://localhost:1313/aintoa/search/</link>
+        <link>http://localhost:1313/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/aintoa/search/</guid>
+        <guid>http://localhost:1313/search/</guid>
         <description></description>
         </item>
         <item>
         <title>关于</title>
-        <link>http://localhost:1313/aintoa/%E5%85%B3%E4%BA%8E/</link>
+        <link>http://localhost:1313/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/aintoa/%E5%85%B3%E4%BA%8E/</guid>
+        <guid>http://localhost:1313/%E5%85%B3%E4%BA%8E/</guid>
         <description>  &lt;style&gt; html, body {
   margin: 0;
   width: 100%;
@@ -44,7 +44,7 @@
 }
 &lt;/style&gt;
   &lt;div id=&#34;tags-wall&#34;&gt;&lt;/div&gt;
-      &lt;script src=&#34;http://localhost:1313/aintoa/js/tags-wall.js&#34; async=&#34;&#34;&gt;&lt;/script&gt;
+      &lt;script src=&#34;http://localhost:1313/js/tags-wall.js&#34; async=&#34;&#34;&gt;&lt;/script&gt;
       &lt;script&gt;
         const query = window.location.search.substring(1)
       .split(&#39;&amp;&#39;).map(e =&gt; e.split(&#39;=&#39;))
