@@ -84,3 +84,8 @@ mark{
 body.modal-open {
     overflow: hidden;
 }
+.tk-content img, .tk-avatar img {
+    transform: none !important;
+    cursor: default !important;
+    border-radius: 50% !important;
+}
