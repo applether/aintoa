@@ -136,7 +136,7 @@ params:
                 placeholder:
 
         twikoo:
-            envId: https://twikoo-2l83pcuwn-applethers-projects.vercel.app
+            envId: https://twikoo-murex-eta.vercel.app
             region:
             path:
             lang: zh-cn
