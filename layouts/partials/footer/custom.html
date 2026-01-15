@@ -1,0 +1,37 @@
+<div id="img-zoom-modal" class="img-zoom-modal">
+    <img id="img-zoom-content" src="" alt="Zoomed Image">
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('img-zoom-modal');
+    const modalImg = document.getElementById('img-zoom-content');
+    
+    // 获取文章中所有的图片
+    const images = document.querySelectorAll('.article-post img, .markdown-body img');
+    
+    images.forEach(img => {
+        // 只有标准的 Markdown 图片才启用点击
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', function() {
+            modal.style.display = 'flex';
+            modalImg.src = this.src;
+            document.body.classList.add('modal-open');
+        });
+    });
+
+    // 点击遮罩层关闭
+    modal.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+    });
+
+    // 按下 ESC 键关闭
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            modal.style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
+    });
+});
+</script>

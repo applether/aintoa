@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='http://localhost:1313/p/%E6%98%A5%E6%9A%96%E8%8A%B1%E5%BC%80%E5%8E%BB%E5%8D%97%E4%BA%AC%E4%BA%BA%E6%8C%A4%E4%BA%BA/'>
 
-<link rel="stylesheet" href="/scss/style.min.c57dd67785d5774dcb22a37c6101e896434fe5a05ac080025658db9079bc06d9.css"><script src="/js/js.js"></script>
+<link rel="stylesheet" href="/scss/style.min.d74aa879e7d144825df85026854bafd177e822fc8083d94486e1865b009cd695.css"><script src="/js/js.js"></script>
 <meta property='og:title' content="春暖花开，去南京人挤人">
 <meta property='og:description' content="一不小心落入了特种兵式旅游的陷阱">
 <meta property='og:url' content='http://localhost:1313/p/%E6%98%A5%E6%9A%96%E8%8A%B1%E5%BC%80%E5%8E%BB%E5%8D%97%E4%BA%AC%E4%BA%BA%E6%8C%A4%E4%BA%BA/'>
@@ -1637,23 +1637,49 @@
      
     
         
-    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
-<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
-<div id="waline" class="waline-container"></div>
+    <script src="//cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
+<div id="tcomment"></div>
 <style>
-    .waline-container {
+    .twikoo {
         background-color: var(--card-background);
         border-radius: var(--card-border-radius);
         box-shadow: var(--shadow-l1);
         padding: var(--card-padding);
-        --waline-font-size: var(--article-font-size);
     }
-    .waline-container .wl-count {
-        color: var(--card-text-color-main);
+    :root[data-scheme="dark"] {
+        --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
+        --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+    }
+    .twikoo .el-input-group__prepend,
+    .twikoo .tk-action-icon,
+    .twikoo .tk-submit-action-icon,
+    .twikoo .tk-time,
+    .twikoo .tk-comments-no,
+    .twikoo .tk-comments-count {
+        color: var(--twikoo-body-text-color);
+    }
+    .twikoo .el-input__inner,
+    .twikoo .el-textarea__inner,
+    .twikoo .tk-preview-container,
+    .twikoo .tk-content,
+    .twikoo .tk-nick,
+    .twikoo .tk-send {
+        color: var(--twikoo-body-text-color-main);
+    }
+    .twikoo .el-button{
+        color: var(--twikoo-body-text-color)!important;
+    }
+    .twikoo .el-input__count {
+        color: var(--twikoo-body-text-color) !important;
+    }
+    .OwO .OwO-body {
+        background-color: var(--body-background) !important;
+        color: var(--body-text-color) !important;
     }
 </style><script>
-    
-    Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"lang":"zh-cn","locale":{"admin":"Admin","placeholder":null},"pageview":false,"requiredMeta":["name"],"serverURL":"https://waline-h5wxls0v9-applethers-projects.vercel.app"});
+    twikoo.init({
+        envId: 'https:\/\/twikoo-2l83pcuwn-applethers-projects.vercel.app',
+        el: '#tcomment',lang: 'zh-cn',})
 </script>
 
     
@@ -1754,7 +1780,43 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300&family=Noto+Serif+SC:wght@300&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
 
+<div id="img-zoom-modal" class="img-zoom-modal">
+    <img id="img-zoom-content" src="" alt="Zoomed Image">
+</div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('img-zoom-modal');
+    const modalImg = document.getElementById('img-zoom-content');
+    
+    
+    const images = document.querySelectorAll('.article-post img, .markdown-body img');
+    
+    images.forEach(img => {
+        
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', function() {
+            modal.style.display = 'flex';
+            modalImg.src = this.src;
+            document.body.classList.add('modal-open');
+        });
+    });
+
+    
+    modal.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+    });
+
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            modal.style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
+    });
+});
+</script>
 
   <script type="text/javascript" src="/js/snow.js"></script>
 </body>

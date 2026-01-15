@@ -5,6 +5,7 @@ body, .article-content {
     font-family: 'Noto Serif SC', serif;
     // font-family: 'Zhi Mang Xing', cursive;
 
+
     
 }
 
@@ -52,4 +53,34 @@ body{   background-color: var(--body-background);
 //重点标记
 mark{
     background: hsla(199, 64%, 63%, 0.696);
+}
+
+/* 全屏遮罩层 */
+.img-zoom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 10000;
+    display: none; /* 默认隐藏 */
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+}
+
+/* 放大后的图片 */
+.img-zoom-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+/* 页面禁止滚动 */
+body.modal-open {
+    overflow: hidden;
 }

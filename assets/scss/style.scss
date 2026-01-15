@@ -84,6 +84,31 @@
 img {border-radius: 15px }
 
 
+
+/* Hugo Stack主题 图片悬浮放大核心样式 - 文章内默认原尺寸，悬浮高清放大，移开还原 */
+/* 完全保留图片默认大小，仅悬浮触发放大，不影响文章排版 */
+.markdown-body img {
+    /* 核心：保留图片原始宽度，不强制放大，主题默认大小 */
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0.5rem auto !important;
+    display: block !important;
+    border-radius: 4px !important;
+    /* 放大过渡动画，丝滑不生硬，0.3秒完成放大/还原 */
+    transition: all 0.3s ease-in-out !important;
+    /* 鼠标悬浮显示放大镜图标，提示可放大 */
+    cursor: zoom-in !important;
+    /* 防止放大后超出容器 */
+    object-fit: cover !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+
+
+
+
 @import "breakpoints.scss";
 @import "variables.scss";
 @import "grid.scss";

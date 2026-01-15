@@ -83,11 +83,11 @@ params:
         license:
             enabled: true
             default: Licensed under CC BY-NC-SA 4.0
-        
+        photoswipe: false    
 
     comments:
         enabled: true
-        provider: waline
+        provider: twikoo
         
 
         disqusjs:
@@ -136,7 +136,7 @@ params:
                 placeholder:
 
         twikoo:
-            envId: https://twikoo-jvyhqt2xd-applethers-projects.vercel.app
+            envId: https://twikoo-2l83pcuwn-applethers-projects.vercel.app
             region:
             path:
             lang: zh-cn
