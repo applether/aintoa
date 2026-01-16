@@ -136,7 +136,7 @@ params:
                 placeholder:
 
         twikoo:
-            envId: https://twikoo-murex-eta.vercel.app
+            envId: https://twitwikoo.netlify.app/.netlify/functions/twikoo
             region:
             path:
             lang: zh-cn
