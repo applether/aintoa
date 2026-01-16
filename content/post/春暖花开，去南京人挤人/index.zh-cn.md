@@ -3,10 +3,11 @@ title: 春暖花开，去南京人挤人
 description: 一不小心落入了特种兵式旅游的陷阱
 date: 2024-04-12
 image: 25da7c7a-ce48-45c9-91f0-791869c0ab4a.jpg
-categories:
-    - 游记
+categories: 游记
 slug: trip-to-nanjing
+draft: false
 tags:
+
     - 摄影
     - 旅游
 

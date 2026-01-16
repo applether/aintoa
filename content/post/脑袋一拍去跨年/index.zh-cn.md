@@ -1,6 +1,6 @@
 ---
 title: "脑袋一拍去跨年"
-description: 三个懒人的老年人旅行
+description: 三个懒人的老年人式旅行
 date: 2026-01-05
 image: https://s2.loli.net/2026/01/06/VdaoCz5kuQYm4sX.jpg
 comments: true
