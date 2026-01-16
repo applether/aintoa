@@ -5,6 +5,7 @@ date: 2024-04-12
 image: 25da7c7a-ce48-45c9-91f0-791869c0ab4a.jpg
 categories:
     - 游记
+slug: trip-to-nanjing
 tags:
     - 摄影
     - 旅游

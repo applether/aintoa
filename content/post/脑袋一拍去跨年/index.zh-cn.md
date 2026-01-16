@@ -6,6 +6,7 @@ image: https://s2.loli.net/2026/01/06/VdaoCz5kuQYm4sX.jpg
 comments: true
 draft: false
 categories: 游记
+slug: 2026-new-year-trip
 tags:
 
 - 摄影

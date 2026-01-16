@@ -6,6 +6,7 @@ image:
 comments: true
 draft: true
 categories: 游记
+slug: trip-to-tibet
 tags:
 - 摄影
 - 旅游
